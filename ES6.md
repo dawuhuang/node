@@ -28,7 +28,7 @@ Array.form(lis, item => itme * 2)  // 返回的是一个值*2的数组
 查询某个值是否在数组内，返回值是布尔值
 ```js
 [1,2,3,4].includes(3) // true
-``` 
+```
 ### 3.5 扩展运算符
 ```js
 let arr = [1,2,3,4,5,6]
@@ -67,6 +67,7 @@ arr.forEach(value => {
 })
 ```
 ## 6. 解构赋值和剩余参数
+解构不成功的时候，变量和数值个数不匹配的时候，变量对应的值的undefined
 数组解构
 ```js
 let [name,age] = ['zs',20]
@@ -75,6 +76,7 @@ console.log(age)  // 20
 ```
 对象结构，对象结构时可以取别名。
 ```js
+// 当对象的key和value一样时可以简写
 let {name,age} = {name:'zs',age:20}
 console.log(name)  // zs
 console.log(age)  // 20
